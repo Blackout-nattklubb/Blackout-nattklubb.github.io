@@ -19,7 +19,13 @@ header {
     flex-direction: row;
     font-size: 50px;
 }
-   
+
+ #grad1 {
+    height: 500px;
+  background: url(Bilder/Lokale2.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 10%;
+  }
 
 /* meny */
 nav {
