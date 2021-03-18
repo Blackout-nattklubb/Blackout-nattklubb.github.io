@@ -55,21 +55,29 @@ nav li a:hover {
 
 }
 
-#main, #sidebar {
-    border: 1px solid white;
-    color: white;
-
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header Header Header"
+    "Meny Meny Meny Meny Meny"
+    "Ads Main Main Main Events"
+    "Ads Main Main Main Events"
+    "Ads Main Main Main Events"
+    "Footer Footer Footer Footer Footer";
 }
 
-#main {
-    float: left;
-    width: 70%;  
-    
-}
+    .Footer { grid-area: Footer; }
 
+    .Header { grid-area: Header; }
 
-#sidebar {
-    float: right;
-    width: 25%;
+    .Meny { grid-area: Meny; }
 
-}
+    .Events { grid-area: Events; }
+
+    .Ads { grid-area: Ads; }
+
+    .Main { grid-area: Main; }
+
