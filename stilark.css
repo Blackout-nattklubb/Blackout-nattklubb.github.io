@@ -1,62 +1,6 @@
-html {
-    
-}
-
 body {
     background-color: black;
  }
-
-article {
-    
-}
-
-header {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-}
-
- #grad1 {
-  height: 500px;
-  background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
-  background-size: cover;
-  }
-
-/* meny */
-nav {
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    justify-content: center;
-    font-size: 20px;
-}
-
-nav ul { 
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-  }
-  
-nav li {
-    float: left;
-}
-
-nav li a { 
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-
-}
-
-nav li a:hover { 
-    background-color: rgb(206, 206, 206);
-
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -71,15 +15,56 @@ nav li a:hover {
     "Footer Footer Footer Footer Footer";
 }
 
-    .Footer { grid-area: Footer; }
+  .Header { 
+        grid-area: Header;
+         color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        height: 500px;
+        background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
+        background-size: cover;
+}
 
-    .Header { grid-area: Header; }
+ .Meny { 
+     grid-area: Meny;
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        justify-content: center;
+        font-size: 20px;
 
-    .Meny { grid-area: Meny; }
+    nav ul { 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+      }
+
+    nav li {
+        float: left;
+    }
+
+    nav li a { 
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+
+    nav li a:hover { 
+        background-color: rgb(206, 206, 206);
+
+    }
+}
 
     .Events { grid-area: Events; }
 
     .Ads { grid-area: Ads; }
 
     .Main { grid-area: Main; }
+
+    .Footer { grid-area: Footer; }
 
