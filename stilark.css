@@ -14,13 +14,14 @@ body {
     "Ads Main Main Main Events"
     "Footer Footer Footer Footer Footer";
 }
-
-  .Header { 
-        grid-area: Header;
-         color: white;
+ Header{
+     color: white;
         justify-content: center;
         align-items: center;
         font-size: 50px;
+}
+  .Header { 
+        grid-area: Header;
         height: 500px;
         background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
         background-size: cover;
