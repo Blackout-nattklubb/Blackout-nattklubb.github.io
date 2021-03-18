@@ -19,7 +19,9 @@ h1{
         justify-content: center;
         align-items: center;
         font-size: 50px;
-        height: 500px;
+}
+#start{
+    height: 500px;
         background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
         background-size: cover;
 }
@@ -54,7 +56,6 @@ h1{
 
     nav li a:hover { 
         background-color: rgb(206, 206, 206);
-
     }
 
     .Header { grid-area: Header;}
