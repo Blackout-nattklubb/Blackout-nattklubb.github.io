@@ -19,17 +19,11 @@ h1{
         justify-content: center;
         align-items: center;
         font-size: 50px;
-}
-  .Header { 
-        grid-area: Header;
         height: 500px;
         background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
         background-size: cover;
 }
-
- .Meny { 
-     grid-area: Meny;
- }
+}
     nav { 
         display: flex;
         background-color: rgb(0, 0, 0);
@@ -63,7 +57,10 @@ h1{
 
     }
 }
+    .Header { grid-area: Header;}
 
+    .Meny { grid-area: Meny;}
+    
     .Events { grid-area: Events; }
 
     .Ads { grid-area: Ads; }
