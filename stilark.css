@@ -20,11 +20,13 @@ h1{
         align-items: center;
         font-size: 50px;
 }
-#start{
+
+#grad1 {
     height: 500px;
-        background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
-        background-size: cover;
-}
+  background: url(Bilder/Lokale2.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 10%;
+  }
 
     nav { 
         display: flex;
