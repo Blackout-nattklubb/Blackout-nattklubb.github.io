@@ -21,10 +21,9 @@ header {
 }
 
  #grad1 {
-    height: 500px;
+  height: 500px;
   background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
   background-size: cover;
-  padding-top: 10%;
   }
 
 /* meny */
