@@ -92,3 +92,20 @@ body {
         ". . .";
       grid-area: Footer;
     }
+
+    /* Extra small - Large devices */
+@media only screen and (max-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Header Header"
+      "Meny Meny"
+      "Main Main"
+      "Side Side"
+      "Bilder Bilder"
+      "Footer Footer";
+  }
+}
