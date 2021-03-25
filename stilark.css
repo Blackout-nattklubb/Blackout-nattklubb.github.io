@@ -7,7 +7,7 @@ body {
  .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
   gap: 10px 20px;
   grid-template-areas:
     "Meny Meny Meny Meny Meny"
@@ -32,7 +32,7 @@ body {
       flex: center;
   }
     #grad1 {
-      height: 600px;
+      height: 100vh;
       background: url(Bilder/Untitled_Artwork\ \(1\).jpg) no-repeat center;
       background-size: cover;
       padding-top: 10%;
