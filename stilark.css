@@ -73,6 +73,7 @@ body {
     nav li a:hover { 
         background-color: rgb(43, 43, 43);
     }
+
     .Main {
       background-color: rgb(20, 20, 20);
     grid-area: Main; 
@@ -81,6 +82,9 @@ body {
     .Side {
       background-color: rgb(20, 20, 20);
       grid-area: Side;
+    }
+   h1{ 
+      padding-left: 5%;
     }
 
     .Bilder { 
@@ -108,3 +112,127 @@ body {
       "Footer Footer";
   }
 }
+/*Kalender*/
+    :root {
+      --numDays: 4;
+      --numHours: 10;
+      --timeHeight: 60px;
+      --calBgColor: #000000;
+      --eventBorderColor: rgb(31, 31, 31);
+      --eventColor1: rgb(31, 31, 31);
+      --eventColor2: rgb(31, 31, 31);
+      --eventColor3:rgb(31, 31, 31);
+      --eventColor4:rgb(31, 31, 31);
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      margin: 2rem;
+    }
+
+
+    .days {
+      display: grid;
+      grid-column: 2;
+      gap: 5px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .events {
+      display: grid;
+      grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+      border-radius: 5px;
+      background: var(--calBgColor);
+    }
+
+    .start-10 {
+      grid-row-start: 2;
+    }
+
+    .start-12 {
+      grid-row-start: 4;
+    }
+
+    .start-1 {
+      grid-row-start: 5;
+    }
+
+    .start-2 {
+      grid-row-start: 6;
+    }
+
+    .end-12 {
+      grid-row-end: 4;
+    }
+
+    .end-1 {
+      grid-row-end: 5;
+    }
+
+    .end-3 {
+      grid-row-end: 7;
+    }
+
+    .end-4 {
+      grid-row-end: 8;
+    }
+
+    .end-5 {
+      grid-row-end: 9;
+    }
+
+    .title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .event {
+      border: 1px solid var(--eventBorderColor);
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin: 0 0.5rem;
+      background: white;
+    }
+
+    .space,
+    .date {
+      height: 60px
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+    }
+
+    .corp-fi {
+      background: var(--eventColor1);
+    }
+
+    .ent-law {
+      background: var(--eventColor2);
+    }
+
+    .writing {
+      background: var(--eventColor3);
+    }
+
+    .securities {
+      background: var(--eventColor4);
+    }
+
+    .date {
+      display: flex;
+      gap: 1em;
+    }
+
+    .date-num {
+      font-size: 3rem;
+      font-weight: 600;
+      display: inline;
+    }
+
+    .date-day {
+      display: inline;
+      font-size: 3rem;
+      font-weight: 100;
+    }
