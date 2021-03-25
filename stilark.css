@@ -7,12 +7,12 @@ body {
  .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 0fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px 20px;
   grid-template-areas:
-    "Header Header Header Header Header"
-    "Header Header Header Header Header"
     "Meny Meny Meny Meny Meny"
+    "Header Header Header Header Header"
+    "Header Header Header Header Header"    
     "Main Main Main Side Side"
     "Main Main Main Side Side"
     "Main Main Main Side Side"
@@ -32,8 +32,8 @@ body {
       flex: center;
   }
     #grad1 {
-      height: 500px;
-      background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
+      height: 600px;
+      background: url(Bilder/Untitled_Artwork\ \(1\).jpg) no-repeat center;
       background-size: cover;
       padding-top: 10%;
     }
