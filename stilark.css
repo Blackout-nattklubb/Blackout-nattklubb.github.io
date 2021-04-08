@@ -96,7 +96,10 @@ body {
       grid-area: Footer;
       background-color: rgb(31, 31, 31);
       display: flex;
-      flex
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 15px;
     }
 
     /* Extra small - Large devices */
