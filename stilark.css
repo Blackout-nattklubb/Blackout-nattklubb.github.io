@@ -102,22 +102,6 @@ body {
       padding: 15px;
     }
 
-    /* Extra small - Large devices */
-@media only screen and (max-width: 992px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0fr 1fr 1fr 1fr 1fr;
-    gap: 5spx 0px;
-    grid-template-areas:
-      "Header Header"
-      "Meny Meny"
-      "Main Main"
-      "Side Side"
-      "Bilder Bilder"
-      "Footer Footer";
-  }
-}
 /*Kalender*/
     :root {
       --numDays: 4;
@@ -222,4 +206,22 @@ body {
       display: inline;
       font-size: 3rem;
       font-weight: 100;
+    }
+
+    /* Extra small - Large devices */
+    @media only screen and (max-width: 992px) {
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5spx 0px;
+        grid-template-areas:
+          "Meny Meny"
+          "Header Header"
+          "Main Main"
+          "Side Side"
+          "Bilder Bilder"
+          "Footer Footer";
+      }
+ 
     }
