@@ -94,6 +94,9 @@ body {
 
     .Footer {
       grid-area: Footer;
+      background-color: rgb(31, 31, 31);
+      display: flex;
+      flex
     }
 
     /* Extra small - Large devices */
@@ -119,10 +122,7 @@ body {
       --timeHeight: 60px;
       --calBgColor: #000000;
       --eventBorderColor: rgb(49, 49, 49);
-      --eventColor1: rgb(49, 49, 49);
-      --eventColor2: rgb(49, 49, 49);
-      --eventColor3:rgb(49, 49, 49);
-      --eventColor4:rgb(49, 49, 49);
+      --eventColor:rgb(49, 49, 49);
     }
 
     .calendar {
@@ -146,40 +146,40 @@ body {
       background: var(--calBgColor);
     }
 
-    .start-10 {
+    .start-2 {
       grid-row-start: 2;
     }
 
-    .start-12 {
+    .start-4 {
       grid-row-start: 4;
     }
 
-    .start-1 {
+    .start-5 {
       grid-row-start: 5;
     }
 
-    .start-2 {
+    .start-6 {
       grid-row-start: 6;
     }
 
-    .end-12 {
+    .end-4 {
       grid-row-end: 4;
     }
 
-    .end-1 {
+    .end-5 {
       grid-row-end: 5;
     }
 
-    .end-3 {
-      grid-row-end: 7;
-    }
-
-    .end-4 {
+    .end-8 {
       grid-row-end: 8;
     }
 
-    .end-5 {
+    .end-9 {
       grid-row-end: 9;
+    }
+
+    .end-10 {
+      grid-row-end: 10;
     }
 
     .title {
@@ -193,6 +193,7 @@ body {
       padding: 0.5rem;
       margin: 0 0.5rem;
       background: white;
+      background: var(--eventColor);
     }
 
     .space,
@@ -203,23 +204,6 @@ body {
     body {
       font-family: system-ui, sans-serif;
     }
-
-    .corp-fi {
-      background: var(--eventColor1);
-    }
-
-    .ent-law {
-      background: var(--eventColor2);
-    }
-
-    .writing {
-      background: var(--eventColor3);
-    }
-
-    .securities {
-      background: var(--eventColor4);
-    }
-
     .date {
       display: flex;
       gap: 1em;
