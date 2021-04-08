@@ -75,12 +75,12 @@ body {
     }
 
     .Main {
-      background-color: rgb(20, 20, 20);
+      background-color: rgb(31, 31, 31);
     grid-area: Main; 
   }
     
     .Side {
-      background-color: rgb(20, 20, 20);
+      background-color: rgb(31, 31, 31);
       grid-area: Side;
     }
    h1{ 
@@ -88,7 +88,7 @@ body {
     }
 
     .Bilder { 
-      background-color: rgb(20, 20, 20);
+      background-color: rgb(31, 31, 31);
       grid-area: Bilder; 
     }
 
@@ -118,11 +118,11 @@ body {
       --numHours: 10;
       --timeHeight: 60px;
       --calBgColor: #000000;
-      --eventBorderColor: rgb(31, 31, 31);
-      --eventColor1: rgb(31, 31, 31);
-      --eventColor2: rgb(31, 31, 31);
-      --eventColor3:rgb(31, 31, 31);
-      --eventColor4:rgb(31, 31, 31);
+      --eventBorderColor: rgb(49, 49, 49);
+      --eventColor1: rgb(49, 49, 49);
+      --eventColor2: rgb(49, 49, 49);
+      --eventColor3:rgb(49, 49, 49);
+      --eventColor4:rgb(49, 49, 49);
     }
 
     .calendar {
