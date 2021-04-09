@@ -21,6 +21,7 @@ body {
     "Footer Footer Footer Footer Footer";
 }
 
+<<<<<<< Updated upstream
     /*Header*/
   .Header { 
       grid-area: Header;
@@ -37,6 +38,15 @@ body {
       background-size: cover;
       padding-top: 10%;
     }
+=======
+#grad1 {
+  height: 600px;
+  background: url(Bilder/Untitled_Artwork.jpg) no-repeat center;
+  opacity: 80%;
+  background-size: cover;
+  padding-top: 10%;
+}
+>>>>>>> Stashed changes
 
   /*Meny*/
   .Meny {
