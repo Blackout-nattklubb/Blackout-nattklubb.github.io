@@ -208,6 +208,12 @@ body {
       font-weight: 100;
     }
 
+    .kart{
+      text-align: center;
+    }
+
+
+
     /* Extra small - Large devices */
     @media only screen and (max-width: 992px) {
       .grid-container {
