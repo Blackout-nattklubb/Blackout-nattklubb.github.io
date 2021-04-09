@@ -44,20 +44,31 @@
 
 			$mysqli->set_charset("utf8");
 			
-			// Kontroll om tilkoblingen til databasen fungerar (henta frå MAMP-startsida)
-			if ($mysqli->connect_error) {
-				echo 'Errno: '.$mysqli->connect_errno;
-				echo '<br>';
-				echo 'Error: '.$mysqli->connect_error;
-				exit();
-			}
+      // Hentar ut data frå databasen og skriv det ut til nettsida.
+			// Basert på https://www.w3schools.com/php/php_mysql_select.asp
+			$sql = "SELECT * From mat";
+			$resultat = $mysqli->query($sql);
 
-			echo '<p>Success: A proper connection to MySQL was made.';
-			echo '<br>';
-			echo 'Host information: '.$mysqli->host_info;
-			echo '<br>';
-			echo 'Protocol version: '.$mysqli->protocol_version . "</p><br>";
+            echo "<table>";
+            echo "<tr>";
+                echo "<th>Mat</th>";
+                echo "<th>Allergier</th>";
+            echo "</tr>";
 
+            while($rad = $resultat->fetch_assoc()) {
+                $mat = $rad["mat"];
+                $allergier = $rad["allergier"];
+
+                echo "<tr>";
+                    echo "<td>$tittel</td>";               
+                    echo "<td>$aarstall</td>";
+                    echo "<td>$firmanavn</td>";
+                    echo "<td>$plattformnavn</td>";
+                    echo "<td>$bilde</td>";
+                echo "</tr>";
+            }
+
+            echo "</table>";
        
 
 			$mysqli->close();
