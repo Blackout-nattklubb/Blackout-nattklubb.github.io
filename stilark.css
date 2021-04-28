@@ -78,8 +78,13 @@ body {
       font-size: 35px;
       font-weight: bold;
       transition: 0.4s;
+      flex: space-around;
     }
-    
+
+    #meny{
+      flex: space-around;
+    }
+
     .Main {
       background-color: rgb(31, 31, 31);
     grid-area: Main; 
