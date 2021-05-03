@@ -101,12 +101,12 @@ body {
     }
 
     .Main {
-      background-color: rgb(31, 31, 31);
+      background-color: rgb(20, 20, 20);
     grid-area: Main; 
   }
     
     .Side {
-      background-color: rgb(31, 31, 31);
+      background-color: rgb(20, 20, 20);
       grid-area: Side;
     }
    h1{ 
@@ -114,7 +114,7 @@ body {
     }
 
     .Bilder { 
-      background-color: rgb(31, 31, 31);
+      background-color: rgb(20, 20, 20);
       grid-area: Bilder; 
     }
 
