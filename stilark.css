@@ -7,7 +7,7 @@ body {
  .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
+  grid-template-rows: 0fr 0fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
   gap: 10px 20px;
   grid-template-areas:
     "Meny Meny Meny Meny Meny"
@@ -32,8 +32,15 @@ body {
       flex: center;
   }
     #grad1 {
-      height: 100vh;
-      background: url(Bilder/IMG_0007.jpg) no-repeat center;
+      height: 75vh;
+      background: url(Bilder/Main.kunst.JPG) no-repeat center;
+      background-size: cover;
+      padding-top: 10%;
+    }
+
+    #grad2 {
+      height: 75vh;
+      background: url(Bilder/mikrofon.jpg) no-repeat center;
       background-size: cover;
       padding-top: 10%;
     }

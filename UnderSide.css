@@ -7,7 +7,7 @@ body {
  .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
+  grid-template-rows: 0fr 0fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
   gap: 10px 20px;
   grid-template-areas:
     "Meny Meny Meny Meny Meny"
@@ -31,12 +31,26 @@ body {
       font-size: 70px;
       flex: center;
   }
-    #grad1 {
-      height: 100vh;
-      background: url(Bilder/IMG_0007.jpg) no-repeat center;
-      background-size: cover;
-      padding-top: 10%;
-    }
+  #grad3 {
+    height: 75vh;
+    background: url(Bilder/malin.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 10%;
+  }
+
+  #grad4 {
+    height: 75vh;
+    background: url(Bilder/malin.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 10%;
+  }
+
+  #grad5 {
+    height: 75vh;
+    background: url(Bilder/anna.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 10%;
+  }
 
   /*Meny*/
   .Meny {
