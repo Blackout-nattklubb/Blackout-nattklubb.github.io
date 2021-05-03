@@ -3,23 +3,40 @@
     <head>
         <title>Blackout</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="stilark.css"> 
+        <link rel="stylesheet" href="UnderSide.css"> 
     </head>
 
     <body>
         <div class="grid-container">
-
-            <div class="Meny" id="myTopnav">
+            <div class="Meny" id="navbar">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Hjem</a></li>
+                        <li id="logo"><a href="index.html"> <img src="" alt=""></a></li>
+                      <div id="meny">
                         <li><a href="Underholdning.html">Events/Underholdning</a></li>
                         <li><a href="Utleie.html">Utleie</a></li>
-                        <li><a href="Meny.html">Meny</a></li>
+                        <li><a href="Meny.php">Meny</a></li>
                         <li><a href="KontaktOss.html">Kontakt oss</a></li>
+                      </div>
                       </ul>
                  </nav>
             </div>
+            <script>
+              // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+              window.onscroll = function() {scrollFunction()};
+              
+              function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                  document.getElementById("navbar").style.padding = "0px 0px";
+                  document.getElementById("logo").style.width = "300px";
+                  document.getElementById("logo").style.height="120px";
+                } else {
+                  document.getElementById("navbar").style.padding = "0px 0px";
+                  document.getElementById("logo").style.width = "350px";
+                  document.getElementById("logo").style.height="150px";
+                }
+              }
+              </script>
 
             <div class="Header"id="grad1">
                     <h1></h1>
@@ -93,6 +110,15 @@
                           </div>
                           </div>
                         </div>
+                        <div class="kart">
+                        <iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=bergen&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                    <p>Blackout,<br>
+                        Bergenveien 1,<br>
+                        5071 Bergen
+                    </p>
+                    </div>
                       </div>
 
                 </div>

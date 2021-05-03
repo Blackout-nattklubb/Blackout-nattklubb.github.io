@@ -1,0 +1,244 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+ }
+ .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
+  gap: 10px 20px;
+  grid-template-areas:
+    "Meny Meny Meny Meny Meny"
+    "Header Header Header Header Header"
+    "Header Header Header Header Header"    
+    "Main Main Main Side Side"
+    "Main Main Main Side Side"
+    "Main Main Main Side Side"
+    "Bilder Bilder Bilder Bilder Bilder"
+    "Bilder Bilder Bilder Bilder Bilder"
+    "Footer Footer Footer Footer Footer";
+}
+
+    /*Header*/
+  .Header { 
+      grid-area: Header;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      font-size: 70px;
+      flex: center;
+  }
+    #grad1 {
+      height: 100vh;
+      background: url(Bilder/IMG_0007.jpg) no-repeat center;
+      background-size: cover;
+      padding-top: 10%;
+    }
+
+  /*Meny*/
+  .Meny {
+    grid-area: Meny;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 80%;
+    }
+      nav { 
+        background-color: rgb(0, 0, 0);
+        font-size: 25px;
+    }
+    nav ul { 
+        list-style-type: none;
+        margin: 0;
+        padding: 20px;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+      }
+    nav li {
+        float: left;
+    }
+    nav li a { 
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+    nav li a:hover { 
+        background-color: rgb(43, 43, 43);
+    }
+
+    #logo {
+      transition: 0.4s;
+      background: url(Bilder/IMG_0012.jpg);
+      background-size: 100% 100%;
+      width: 350px;
+      height: 150px;
+    }
+
+    #meny{    
+      float: right;
+      padding-top: 55px;
+    }
+
+    .Main {
+      background-color: rgb(31, 31, 31);
+    grid-area: Main; 
+  }
+    
+    .Side {
+      background-color: rgb(31, 31, 31);
+      grid-area: Side;
+    }
+   h1{ 
+      padding-left: 5%;
+    }
+
+    .Bilder { 
+      background-color: rgb(31, 31, 31);
+      grid-area: Bilder; 
+    }
+
+    .Footer {
+      grid-area: Footer;
+      background-color: rgb(31, 31, 31);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 15px;
+    }
+
+/*Kalender*/
+    :root {
+      --numDays: 4;
+      --numHours: 10;
+      --timeHeight: 60px;
+      --calBgColor: #000000;
+      --eventBorderColor: rgb(49, 49, 49);
+      --eventColor:rgb(49, 49, 49);
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      margin: 2rem;
+    }
+
+
+    .days {
+      display: grid;
+      grid-column: 2;
+      gap: 5px;
+      grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    }
+
+    .events {
+      display: grid;
+      grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+      border-radius: 5px;
+      background: var(--calBgColor);
+    }
+
+    .start-2 {
+      grid-row-start: 2;
+    }
+
+    .start-4 {
+      grid-row-start: 4;
+    }
+
+    .start-5 {
+      grid-row-start: 5;
+    }
+
+    .start-6 {
+      grid-row-start: 6;
+    }
+
+    .end-4 {
+      grid-row-end: 4;
+    }
+
+    .end-5 {
+      grid-row-end: 5;
+    }
+
+    .end-8 {
+      grid-row-end: 8;
+    }
+
+    .end-9 {
+      grid-row-end: 9;
+    }
+
+    .end-10 {
+      grid-row-end: 10;
+    }
+
+    .title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .event {
+      border: 1px solid var(--eventBorderColor);
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin: 0 0.5rem;
+      background: white;
+      background: var(--eventColor);
+    }
+
+    .space,
+    .date {
+      height: 60px
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+    }
+    .date {
+      display: flex;
+      gap: 1em;
+    }
+
+    .date-num {
+      font-size: 3rem;
+      font-weight: 600;
+      display: inline;
+    }
+
+    .date-day {
+      display: inline;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+
+    .kart{
+      text-align: center;
+    }
+
+
+
+    /* Extra small - Large devices */
+    @media only screen and (max-width: 992px) {
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 5spx 0px;
+        grid-template-areas:
+          "Meny Meny"
+          "Header Header"
+          "Main Main"
+          "Side Side"
+          "Bilder Bilder"
+          "Footer Footer";
+      }
+ 
+    }
