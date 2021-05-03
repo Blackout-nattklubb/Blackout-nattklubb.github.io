@@ -11,7 +11,7 @@
             <div class="Meny" id="navbar">
                 <nav>
                     <ul>
-                        <li id="logo"><a href="index.html"> <img src="" alt=""></a></li>
+                        <li id="logo"><a href="index.html"></a></li>
                       <div id="meny">
                         <li><a href="Underholdning.html">Events/Underholdning</a></li>
                         <li><a href="Utleie.html">Utleie</a></li>

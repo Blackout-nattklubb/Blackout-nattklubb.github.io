@@ -28,6 +28,7 @@ body {
       color: white;
       justify-content: center;
       align-items: center;
+      font-family: 'Courier New', Courier, monospace;
       font-size: 70px;
       flex: center;
   }
@@ -135,8 +136,6 @@ body {
       height: 60%;
       padding: 50px;
     }
-
-
 
     /* Extra small - Large devices */
     @media only screen and (max-width: 992px) {
