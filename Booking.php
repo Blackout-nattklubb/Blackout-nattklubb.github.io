@@ -43,13 +43,9 @@
               </div>
               
                 <div class="Main">
-                  <p> Her på Blackout tilbyr vi masse variert underholdning og det er alltid et nytt Event i vente. 
-                    Enten det er Live opptredener, Stand-up, Åpen scene, Fotballkamper eller tema-kvelder du ønsker så har vi alltid et tibud for alle.
-                    Kom til oss for nye opplevelser
-                  </p>
-                  <p>Her hos Blackout tar vi vel imot søknader fra de som ønsker å holde opptredener på vår scene.
-                    <a href="Booking.php">Meld bandet på</a>
-                  </p>
+                    <p> Velkommen til Blackout
+                        .....
+                    </p>
                 </div>
 
                 <div class="Side">
