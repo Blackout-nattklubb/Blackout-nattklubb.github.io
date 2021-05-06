@@ -27,51 +27,48 @@
               
                 <div class="Main">
 
-                <?php
-			// Innloggingsinformasjon og spesifisering av kva database ein jobbar med
-			$db_host = 'localhost';
-			$db_user = 'root';
-			$db_password = '';
-			$db_db = 'matdatabase';
-			$db_port = 3306;
+    <?php
+          // Innloggingsinformasjon og spesifisering av kva database ein jobbar med
+          $db_host = 'localhost';
+          $db_user = 'root';
+          $db_password = '';
+          $db_db = 'matdatabase';
+          $db_port = 3306;
 
-			$mysqli = new mysqli(
-				$db_host,
-				$db_user,
-				$db_password,
-				$db_db
-			);
+          $mysqli = new mysqli(
+            $db_host,
+            $db_user,
+            $db_password,
+            $db_db
+          );
 
-			$mysqli->set_charset("utf8");
-			
-      // Hentar ut data frå databasen og skriv det ut til nettsida.
-			// Basert på https://www.w3schools.com/php/php_mysql_select.asp
-			$sql = "SELECT * From mat";
-			$resultat = $mysqli->query($sql);
+          $mysqli->set_charset("utf8");
+          
+          // Hentar ut data frå databasen og skriv det ut til nettsida.
+          // Basert på https://www.w3schools.com/php/php_mysql_select.asp
+          $sql = "SELECT * From mat";
+          $resultat = $mysqli->query($sql);
 
-            echo "<table>";
-            echo "<tr>";
-                echo "<th>Mat</th>";
-                echo "<th>Allergier</th>";
-            echo "</tr>";
-
-            while($rad = $resultat->fetch_assoc()) {
-                $mat = $rad["mat"];
-                $allergier = $rad["allergier"];
-
+                echo "<table>";
                 echo "<tr>";
-                    echo "<td>$tittel</td>";               
-                    echo "<td>$aarstall</td>";
-                    echo "<td>$firmanavn</td>";
-                    echo "<td>$plattformnavn</td>";
-                    echo "<td>$bilde</td>";
+                    echo "<th>Mat</th>";
+                    echo "<th>Allergier</th>";
                 echo "</tr>";
-            }
 
-            echo "</table>";
-       
+                while($rad = $resultat->fetch_assoc()) {
+                    $mat = $rad["mat"];
+                    $allergier = $rad["allergier"];
 
-			$mysqli->close();
+                    echo "<tr>";
+                        echo "<td>$mat</td>";               
+                        echo "<td>$allergier</td>";
+                    echo "</tr>";
+                }
+
+                echo "</table>";
+          
+
+          $mysqli->close();
 		?>
                 </div>
                 <div class="Footer">
