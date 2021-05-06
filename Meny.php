@@ -93,7 +93,7 @@
                   </tr>
                   </table>
                 
-                  <p> Logo</p>
+                  <p id="logo"><a href="index.html"></a></p>
                 </div>
                 </div>
         </div>
